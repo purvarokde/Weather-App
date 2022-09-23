@@ -1,38 +1,132 @@
-.App {
+/* .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  font-size: 30px;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image: url(image.jfif);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.search-input {
+  height: 100%;
+
+  flex: 5;
+  margin-right: 5px;
+  outline: 0;
+  border: none;
+  font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.unit {
+  font-size: 25px;
+  font-weight: 800;
+  position: fixed;
+  top: 0;
+  right: 10px;
+  cursor: pointer;
+}
+
+.temperature {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.search-box {
+  padding: 5px 15px;
+  height: 50px;
+  width: 400px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px grey;
+}
+
+SearchIcon {
+  height: 95%;
+  flex: 1;
+  background-color: grey;
+  font-weight: 600;
+  font-size: 18px;
+  fill: darkblue;
+  color: blue;
+}
+
+.place-name:hover {
+  display: flex;
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: darkgrey;
+}
+
+.location-item {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+  align-items: flex-start;
+}
+ */
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-image: url(image.jfif);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  color: white;
+}
+
+.search-input {
+  font-size: 30px;
+  border-radius: 5px 5px;
+  padding: 5px 15px;
+  box-shadow: 5px 5px 15px grey;
+  margin-bottom: 20px;
+}
+
+.unit {
+  right: 10px;
+  font-size: 30px;
+  position: fixed;
+  top: 0;
+  cursor: pointer;
+}
+
+.search-button {
+  font-size: 10px;
+  display: inline-block;
+}
+
+.place-name:hover {
+  display: flex;
+  padding: 5px;
+  cursor: pointer;
+  margin: 5px;
+  background-color: grey;
+}
+
+.location-item {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  align-items: flex-start;
+  padding-left: 5px;
 }
